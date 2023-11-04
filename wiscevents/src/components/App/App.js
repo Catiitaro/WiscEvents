@@ -1,10 +1,9 @@
+wiscevents/src/components/App/App.js
 import logo from './logo.svg';
 import './App.css';
-
 function MyButton() {
   return <button class="button"> I'm a button </button>;
 }
-
 function App() {
   return (
     <div class="header">
@@ -17,5 +16,4 @@ function App() {
     </div>
   );
 }
-
 export default App;
