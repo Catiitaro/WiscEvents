@@ -1,24 +1,11 @@
-import './App.css';
-
+import './App.css'
+import Button from '../Button/Button'
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  return (<div class="header">
+    <a href="#default" class="logo">CompanyLogo</a>
+    <Button name="Explore Events"/>
+    <Button name="Create New Event"/>
+    <Button name="Profile"/>
+  </div>);
 }
-
 export default App;
