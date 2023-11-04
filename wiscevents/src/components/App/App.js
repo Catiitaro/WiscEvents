@@ -1,4 +1,3 @@
-wiscevents/src/components/App/App.js
 import logo from './logo.svg';
 import './App.css';
 function MyButton() {
