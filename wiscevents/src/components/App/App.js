@@ -1,11 +1,8 @@
 import './App.css'
-import Button from '../Button/Button'
+import Navbar from '../Navbar/Navbar'
 function App() {
-  return (<div class="header">
-    <a href="#default" class="logo">CompanyLogo</a>
-    <Button name="Explore Events"/>
-    <Button name="Create New Event"/>
-    <Button name="Profile"/>
+  return (<div class="App">
+    <Navbar />
   </div>);
 }
 export default App;
