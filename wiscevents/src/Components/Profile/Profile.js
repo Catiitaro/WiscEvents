@@ -12,6 +12,7 @@ function createAnchor(props, text) {
 function createEvent(event) {
     return (
     <div key={event.id} className="event">
+        <a href={'/events/'+event.id}>
         <div className="event-image">
             <img src={event.image} alt={event.title}/>
         </div>
@@ -19,6 +20,7 @@ function createEvent(event) {
             <h3>{event.title}</h3>
             <p className="event-description" dangerouslySetInnerHTML={{__html: event.description}}></p>
         </div>
+        </a>
     </div>)
   /*return React.createElement('div', { key: event.id, className: 'event' },
     React.createElement('div', { className: 'event-image' },
