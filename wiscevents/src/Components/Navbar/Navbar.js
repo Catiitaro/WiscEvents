@@ -5,11 +5,11 @@ import logo from '../../images/wiscevents1.webp'
 export default function Navbar() {
     return (
     <div class="header">
-    <a href="https://www.w3schools.com"> <img src={logo} class="logo"/> </a>
+    <a href="#home"> <img src={logo} class="logo"/> </a>
     <Button name="Explore Events"/>
     <Button name="Create New Event"/>
     <div class="header-right">
-        <Button name="Profile"/>
+        <Button name="Sign In"/>
     </div>
     </div>
     );
