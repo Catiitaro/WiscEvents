@@ -1,0 +1,53 @@
+/* Home.css */
+.home {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+  }
+  
+  .header h1 {
+    font-size: 36px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+  }
+  
+  .feature {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+  }
+  
+  .feature h2 {
+    font-size: 24px;
+  }
+  
+  .call-to-action {
+    margin: 30px 0;
+  }
+  
+  button {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: #444;
+  }
+  

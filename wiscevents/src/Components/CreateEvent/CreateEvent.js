@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './CreateEvent.css'; // Create a CSS file for your component
-import blankimage from '../../images/blank-image.png'
+import blankimage from '../../images/blankimage.png'
 
 function CreateEvent() {
   const [image, setImage] = useState(null);
