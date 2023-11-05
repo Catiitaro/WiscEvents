@@ -3,6 +3,7 @@ import {Navigate} from 'react-router-dom'
 import {Fragment} from "react"
 import madhacks from '../../images/madhacks.avif'
 import cheesehacks from '../../images/CheeseHacks.jpg'
+import './Profile.css';
 export default function Profile(props) {
     console.log("profile " + props);
     function handleSignOut() {

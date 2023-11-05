@@ -1,0 +1,82 @@
+/* Profile.css */
+
+/* Styles for the main profile container */
+.profile {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the content is at least the height of the viewport */
+    background-color: #f7f7f7; /* Add a subtle background color */
+  }
+  
+  /* Styles for the Sign Out button */
+  .profile button {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px; /* Increase the space between header and button */
+  }
+  
+  /* Styles for the user profile information */
+  .user-profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px; /* Increase the space between button and user profile */
+  }
+  
+  /* Styles for the user's profile picture */
+  .user-profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  /* Styles for the user's name */
+  .user-profile h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Styles for the user's email */
+  .user-profile p {
+    font-size: 16px;
+    margin: 5px 0;
+  }
+  
+  /* Styles for the anchor links within descriptions */
+  .user-profile a {
+    color: #0074d9;
+    text-decoration: none;
+  }
+  
+  /* Hover effect for anchor links */
+  .user-profile a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    .profile button {
+      font-size: 14px;
+    }
+  
+    .user-profile h2 {
+      font-size: 20px;
+    }
+  
+    .user-profile p {
+      font-size: 14px;
+    }
+  }
+  

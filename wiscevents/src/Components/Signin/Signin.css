@@ -1,0 +1,42 @@
+/* Signin.css */
+
+/* Styles for the Signin container */
+.Signin {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    min-height: 100vh; /* Ensure the content is at least the height of the viewport */
+    background-color: #f7f7f7; /* Add a subtle background color */
+  }
+  
+  /* Styles for the Google Sign-In button container */
+  #signInDiv {
+    margin-top: 20px; /* Increase the space between the header and the button */
+  }
+  
+  /* Styles for the Google Sign-In button */
+  #signInDiv button {
+    background-color: #4285F4; /* Google Blue color */
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  /* Hover effect for the Google Sign-In button */
+  #signInDiv button:hover {
+    background-color: #357ABD; /* Slightly darker blue on hover */
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    #signInDiv button {
+      font-size: 14px;
+    }
+  }
+  

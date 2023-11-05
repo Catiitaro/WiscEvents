@@ -2,6 +2,7 @@ import { jwtDecode } from 'jwt-decode';
 import { useEffect, useState } from 'react';
 import ls from 'local-storage'
 import {Navigate} from 'react-router-dom'
+import './Signin.css';
 
 function Signin(props) {
 //console.log(props);
