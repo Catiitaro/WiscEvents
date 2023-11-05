@@ -1,15 +1,50 @@
 /* Signin.css */
 
-/* Styles for the Signin container */
+/* Center the entire content vertically and horizontally */
 .Signin {
     text-align: center;
-    padding: 20px;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    min-height: 100vh; /* Ensure the content is at least the height of the viewport */
-    background-color: #f7f7f7; /* Add a subtle background color */
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #C5050C, #FFFFFF);
+    background-size: 400% 400%;
+    animation: gradientBG 12s ease infinite;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  @keyframes gradientBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  /* Title or heading for the sign-in page */
+  h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  /* Introduction */
+  p {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  
+  /* Illustration or Image */
+  .illustration {
+    width: 300px;
+    height: auto;
+    margin: 20px 0;
   }
   
   /* Styles for the Google Sign-In button container */
@@ -22,10 +57,10 @@
     background-color: #4285F4; /* Google Blue color */
     color: #fff;
     border: none;
-    padding: 10px 20px;
+    padding: 20px 40px; /* Increase the padding to make the button bigger */
     cursor: pointer;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 18px; /* Increase the font size to make the button bigger */
   }
   
   /* Hover effect for the Google Sign-In button */
@@ -36,7 +71,13 @@
   /* Responsive design for smaller screens */
   @media (max-width: 768px) {
     #signInDiv button {
-      font-size: 14px;
+      font-size: 16px;
     }
   }
+
+  
+  
+  
+  
+  
   

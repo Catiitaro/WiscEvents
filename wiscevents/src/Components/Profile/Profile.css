@@ -1,82 +1,47 @@
-/* Profile.css */
-
-/* Styles for the main profile container */
-.profile {
-    text-align: center;
-    padding: 20px;
+/* Styles for the "Sign Out" button */
+.sign-out-button {
+    margin-top: 125px; /* Add margin to move the button down */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  /* Styles for uniform and smaller events */
+  .event {
     display: flex;
-    flex-direction: column;
-    align-items: center; /* Center horizontally */
-    justify-content: center; /* Center vertically */
-    min-height: 100vh; /* Ensure the content is at least the height of the viewport */
-    background-color: #f7f7f7; /* Add a subtle background color */
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  /* Styles for the Sign Out button */
-  .profile button {
-    background-color: #0074d9;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    font-size: 16px;
-    margin-top: 20px; /* Increase the space between header and button */
+  .event-image img {
+    max-width: 100px;
+    border-radius: 10px 0 0 10px;
   }
   
-  /* Styles for the user profile information */
+  .event-details {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  /* Styles for the user profile position */
   .user-profile {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px; /* Increase the space between button and user profile */
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 40px;
   }
   
-  /* Styles for the user's profile picture */
-  .user-profile img {
+  .user-info {
+    margin-right: 200px;
+  }
+  
+  .user-info img {
     width: 150px;
     height: 150px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
-  }
-  
-  /* Styles for the user's name */
-  .user-profile h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
-  }
-  
-  /* Styles for the user's email */
-  .user-profile p {
-    font-size: 16px;
-    margin: 5px 0;
-  }
-  
-  /* Styles for the anchor links within descriptions */
-  .user-profile a {
-    color: #0074d9;
-    text-decoration: none;
-  }
-  
-  /* Hover effect for anchor links */
-  .user-profile a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    .profile button {
-      font-size: 14px;
-    }
-  
-    .user-profile h2 {
-      font-size: 20px;
-    }
-  
-    .user-profile p {
-      font-size: 14px;
-    }
   }
   
