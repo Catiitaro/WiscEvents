@@ -132,7 +132,7 @@ export default function Profile(props) {
           </div>
           <div className="user-events">
             <h2>Your Events</h2>
-            {ls.get('events').map((event) => createEvent(event))}
+            {ls.get('events').slice(0,2).map((event) => createEvent(event))}
           </div>
         </div>
       </div>
