@@ -1,0 +1,19 @@
+.shittybutton {
+    background-color: #C5050C; /* Badger Red */
+    border: 2px solid #C5050C;
+    border-radius: 16px;
+    color: white;
+    padding: 10px 30px;;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  .shittybutton:hover {
+    background-color: white;
+    color: #C5050C; /* Badger Red */;
+    border: 2px solid #C5050C;
+  }
