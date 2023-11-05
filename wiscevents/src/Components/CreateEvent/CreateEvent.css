@@ -13,13 +13,13 @@ input, textarea {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*margin-right: ; /* Adjust the margin as needed */
   }
   
   .event-image {
     max-width: 500;
     max-height: 300px;
     object-fit: cover;
+    margin: 25px;
   }
   
   textarea.auto-expand-textarea {
