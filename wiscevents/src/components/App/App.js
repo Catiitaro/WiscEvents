@@ -2,7 +2,7 @@ import './App.css'
 import Navbar from '../Navbar/Navbar'
 import {
   createBrowserRouter,
-  RouterProvider,
+  RouterProvider, useParams
 } from "react-router-dom";
 import Home from '../Home/Home'
 import CreateEvent from '../CreateEvent/CreateEvent'
@@ -38,7 +38,7 @@ const router = createBrowserRouter([
 ]);
 function App() {
   return (
-    <div class="App">
+    <div className="App">
       <Navbar/>
       <RouterProvider router={router}/>
    </div>

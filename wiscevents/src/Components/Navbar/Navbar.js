@@ -9,10 +9,10 @@ export default function Navbar() {
     <a href="/"> <img src={logo} className="logo"/> </a>
 
 
-    <Button name="Explore Events"/>
-    <Button name="Create New Event"/>
+    <Button dest="/explore" name="Explore Events"/>
+    <Button dest="/create-event" name="Create New Event"/>
     <div class="header-right">
-        <Button name="Sign In"/>
+        <Button dest="/signin" name="Sign In"/>
     </div>
     </div>
     );
