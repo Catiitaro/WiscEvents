@@ -1,8 +1,8 @@
 import { jwtDecode } from 'jwt-decode';
 import { useEffect, useState } from 'react';
+import './App.css';
 
-
-function Signin() {
+function App() {
   const [user, setUser] = useState({});
   const [authenticated, setAuthenticated] = useState(false);
 
@@ -54,4 +54,4 @@ function Signin() {
   );
 }
 
-export default Signin;
+export default App;
