@@ -1,30 +1,40 @@
 /* CreateEvent.css */
 
 .create-event {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .image-and-description {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-right: ; /* Adjust the margin as needed */
-  }
-  
-  .event-image {
-    max-width: 500;
-    max-height: 300px;
-    object-fit: cover;
-  }
-  
-  textarea.auto-expand-textarea {
-    min-height: 100px;
-    max-width: 300px;
-    resize: vertical;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif; /* Set a font-family for consistency */
+  background-color: #f4f4f4; /* Add a background color */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
+}
 
+.image-and-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 10px; /* Adjust the margin as needed */
+}
+
+.event-image {
+  max-width: 100%; /* Allow the image to scale within its container */
+  max-height: 300px;
+  object-fit: cover;
+  border: 2px solid #fff; /* Add a white border to the image */
+  border-radius: 10px; /* Round the image corners */
+}
+
+textarea.auto-expand-textarea {
+  min-height: 100px;
+  width: 100%; /* Expand the textarea to its container's width */
+  resize: none; /* Prevent resizing */
+  border: 2px solid #ccc; /* Add a subtle border */
+  border-radius: 5px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+}
 
 /* Style input placeholders */
 input[type="text"]::placeholder,
@@ -39,12 +49,21 @@ textarea:focus::placeholder {
   color: transparent;
 }
 
-
 /* Center the text inside input and textarea boxes */
 input[type="text"],
 textarea {
   text-align: center;
 }
 
+.custom-file-upload {
+  text-align: center;
+  cursor: pointer;
+}
 
-  
+.custom-file-upload img {
+  transition: transform 0.2s; /* Add a transition effect to the image */
+}
+
+.custom-file-upload:hover img {
+  transform: scale(1.05); /* Enlarge the image on hover */
+}
