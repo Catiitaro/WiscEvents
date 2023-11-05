@@ -50,7 +50,7 @@ console.log(props)
       title: title,
       time: time,
       date: date,
-      price: price
+      cost: cost
     };
 
     var res = [...props.events, event]

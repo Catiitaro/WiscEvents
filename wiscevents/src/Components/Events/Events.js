@@ -16,7 +16,7 @@ export default function Events(props) {
         <p className="event-location">{"Location: " + event.location}</p>
         <p className="event-date">{"Date: " + event.date}</p>
         <p className="event-time">{"Time: " + event.time}</p>
-        <p className="event-price">{"Price: " + event.price}</p>
+        <p className="event-price">{"Cost: " + event.cost}</p>
       </div>
     </div>
   );
