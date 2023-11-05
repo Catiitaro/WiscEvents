@@ -4,7 +4,10 @@ import ShittyButton from '../ShittyButton/ShittyButton';
 import {Navigate, useNavigate} from 'react-router-dom'
 import ls from 'local-storage'
 function CreateEvent(props) {
-  
+    const [image, setImage] = useState(null);
+    const [location, setLocation] = useState('');
+    const [cost, setCost] = useState('');
+    const [description, setDescription] = useState('');
 console.log(props)
   const hiddenFileInput = useRef(null); // ADDED
 
@@ -21,24 +24,24 @@ console.log(props)
     if (e.target.files.length < 1) return;
     const file = e.target.files[0];
     const imageUrl = URL.createObjectURL(file);
-    props.setImage(imageUrl);
+    setImage(imageUrl);
   };
 
   const clearInputFields = () => {
-    props.setImage(null);
-    props.setLocation('');
-    props.setCost('');
-    props.setDescription('');
+    setImage(null);
+    setLocation('');
+    setCost('');
+    setDescription('');
   };
 
   const createEvent = () => {
     const id = props.events.length+1;
     console.log("creating " + id)
     const event = {
-      image:props.image,
-      location:props.location,
-      cost:props.cost,
-      description:props.description,
+      image:image,
+      location:location,
+      cost:cost,
+      description:description,
       id: id,
     };
 
@@ -67,11 +70,11 @@ console.log(props)
               style={{ display: 'none' }}
             />
           </label>
-          <img src={props.image} className="event-image" />
+          <img src={image} className="event-image" />
           <label>Description:</label>
           <textarea
-            value={props.description}
-            onChange={(e) => props.setDescription(e.target.value)}
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
             className="auto-expand-textarea"
           />
         </div>
@@ -79,16 +82,16 @@ console.log(props)
       <div className="event-input">
   <input
     type="text"
-    value={props.location}
-    onChange={(e) => props.setLocation(e.target.value)}
+    value={location}
+    onChange={(e) => setLocation(e.target.value)}
     placeholder="Location"
   />
 </div>
 <div className="event-input">
   <input
     type="text"
-    value={props.cost}
-    onChange={(e) => props.setCost(e.target.value)}
+    value={cost}
+    onChange={(e) => setCost(e.target.value)}
     placeholder="Cost"
   />
 </div>
