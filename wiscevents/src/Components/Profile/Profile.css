@@ -15,9 +15,11 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   
-  .event-image img {
-    max-width: 100px;
-    border-radius: 10px 0 0 10px;
+  .event-image {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    padding: 30px; /* Add padding to create space from the left */
   }
   
   .event-details {

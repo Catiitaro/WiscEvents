@@ -1,4 +1,59 @@
-img{
-    max-width: 500px;
-    max-height: 500px;
-}
+/* Events.css */
+
+/* Styles for the main events container */
+.events {
+    display: flex;
+    align-items: top;
+    justify-content: left;
+    padding: 25px;
+    min-height: 100vh;
+    background-color: #f7f7f7;
+  }
+  
+  /* Styles for the left column containing the event image */
+  .event-image {
+    width: 400px;
+    max-height: 400px; /* Adjust the max height as needed */
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px; /* Add spacing between columns */
+  }
+  
+  /* Styles for the right column containing event information */
+  .event-description {
+    width: 50%;
+  }
+  
+  /* Additional styles for the event title */
+  .event-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .event-location {
+    width: 50%;
+  }
+
+  .event-time {
+    width: 50px;
+  }
+
+  .event-date {
+    width: 50px;
+  }
+  
+  /* Responsive design for smaller screens */
+  @media (max-width: 768px) {
+    /* Revert to a single-column layout on smaller screens */
+    .event-image,
+    .event-description {
+      width: 100%;
+      margin-right: 0;
+    }
+  
+    .event-image {
+      max-height: auto; /* Adjust as needed */
+    }
+  }
+  

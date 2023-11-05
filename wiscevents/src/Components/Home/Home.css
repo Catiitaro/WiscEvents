@@ -108,3 +108,13 @@
   transform: translateY(-5px); /* Slight elevation on hover */
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }
+
+/* Styles for the "feature-list" */
+.feature-list {
+  list-style-type: disc; /* Use bullet points for the list */
+  padding-left: 20px; /* Add left padding to align with the feature text */
+  margin-top: 10px; /* Space between feature text and the list */
+}
+
+/* Rest of your CSS styles... */
+
