@@ -1,37 +1,42 @@
 /* Home.css */
-.Home {
-    text-align: center;
-    padding: 20px;
-    margin: 30px ;
+.home {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  min-height: 100vh; /* Ensure the content is at least the height of the viewport */
+  gap: 20px; /* Increase the space between sections */
 }
 
-  
-  .header {
-    background: #f1f1f1;
-    color: #000;
-    padding: 20px;
-  }
-  
-  .header h1 {
-    font-size: 36px;
-  }
-  
-  .features {
-    justify-content: start;
-    margin: 0; /* This centers the features section horizontally */
-    max-width: 800px; /* Optionally, you can set a max-width for the centered section */
+.features {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  gap: 20px; /* Increase the space between features */
+  max-width: 800px; /* Optionally, set a max-width for the centered section */
 }
-  
-  .feature {
-    flex: 1;
-    padding: 20px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-    background: #fff;
-  }
-  
-  .feature h2 {
-    font-size: 24px;
-  }
 
-  
+.testimonials {
+  text-align: center;
+  margin-top: 20px; /* Increase the space between Features and Testimonials */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center testimonials horizontally */
+  gap: 20px; /* Increase the space between testimonials */
+}
+
+.testimonial {
+  text-align: center;
+  flex: 1;
+}
+
+.testimonial img {
+  max-width: 100px; /* Set the maximum image width */
+}
+
+.footer {
+  text-align: center;
+  margin-top: 20px; /* Increase the space between Testimonials and Footer */
+}

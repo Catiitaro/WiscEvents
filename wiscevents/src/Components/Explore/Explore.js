@@ -7,19 +7,20 @@ import madhacks from '../../images/madhacks.avif'
 function Explore() {
   const [events, setEvents] = useState([
     // Sample event data
-    {
-      id: 1,
-      title: 'CheeseHacks Hackathon',
-      image: cheesehacks,
-      description: 'This is a hackathon!',
-    },
-    {
-      id: 2,
-      title: 'MadHacks Hackathon',
-      image: madhacks,
-      description: 'This is also a hackathon.',
-    },
-    // Add more event data here
+  {
+    id: 1,
+    title: 'CheeseHacks Hackathon',
+    image: cheesehacks,
+    description: <a href="https://cheesehacks.webdevuw.org">This is a hackathon!</a>,
+  },
+  {
+    id: 2,
+    title: 'MadHacks Hackathon',
+    image: madhacks,
+    description: <a href="https://www.madhacks.io">This is also a hackathon.</a>,
+  },
+// Add more event data here
+
   ]);
 
   const [selectedEvent, setSelectedEvent] = useState(null);
