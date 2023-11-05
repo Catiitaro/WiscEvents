@@ -12,6 +12,8 @@ import Explore from '../Explore/Explore'
 import Profile from '../Profile/Profile'
 import Signin from '../Signin/Signin';
 import ls from 'local-storage'
+import madhacks from '../../images/madhacks.avif'
+import cheesehacks from '../../images/CheeseHacks.jpg'
 
 const App = () => {
   const [user, setUser] = useState(ls.get("user") || {})
@@ -21,7 +23,18 @@ const App = () => {
   const [location, setLocation] = useState('');
   const [cost, setCost] = useState('');
   const [description, setDescription] = useState('');
-  const [events, setEvents] = useState(ls.get("events")||[]);
+  const [events, setEvents] = useState(ls.get("events")||[{
+    id: 1,
+    title: 'CheeseHacks Hackathon',
+    image: cheesehacks,
+    description: <a href="https://cheesehacks.webdevuw.org">This is a hackathon!</a>,
+  },
+  {
+    id: 2,
+    title: 'MadHacks Hackathon',
+    image: madhacks,
+    description: <a href="https://www.madhacks.io">This is also a hackathon.</a>,
+  },]);
 
   return (
     <div className="App">
@@ -34,11 +47,11 @@ const App = () => {
           },
           {
             path: "/events/:eventId",
-            element: <Events isAuthenticated={isAuthenticated} user={user}/>,
+            element: <Events isAuthenticated={isAuthenticated} user={user} events={events}/>,
           },
           {
             path: "/explore",
-            element: <Explore isAuthenticated={isAuthenticated} user={user}/>,
+            element: <Explore isAuthenticated={isAuthenticated} user={user} events={events}/>,
           },
           {
             path: "/profile",
