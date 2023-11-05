@@ -44,4 +44,9 @@
     object-fit: cover;
     margin-bottom: 10px;
   }
+
+  .event-image img {
+    width:200px;
+    max-height: 200px;
+  }
   

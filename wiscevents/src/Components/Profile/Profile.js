@@ -10,7 +10,17 @@ function createAnchor(props, text) {
 }
 
 function createEvent(event) {
-  return React.createElement('div', { key: event.id, className: 'event' },
+    return (
+    <div key={event.id} className="event">
+        <div className="event-image">
+            <img src={event.image} alt={event.title}/>
+        </div>
+        <div className="event-details">
+            <h3>{event.title}</h3>
+            <p className="event-description" dangerouslySetInnerHTML={{__html: event.description}}></p>
+        </div>
+    </div>)
+  /*return React.createElement('div', { key: event.id, className: 'event' },
     React.createElement('div', { className: 'event-image' },
       React.createElement('img', { src: event.image, alt: event.title })
     ),
@@ -18,7 +28,7 @@ function createEvent(event) {
       React.createElement('h3', null, event.title),
       React.createElement('p', { className: 'event-description' }, createAnchor({ href: event.description.props.href }, event.description.props.children))
     )
-  );
+  );*/
 }
 
 export default function Profile(props) {
@@ -32,13 +42,13 @@ export default function Profile(props) {
         id: 1,
         title: 'CheeseHacks Hackathon',
         image: cheesehacks,
-        description: createAnchor({ href: 'https://cheesehacks.webdevuw.org' }, 'This is a hackathon!'),
+        description: '<a href="https://cheesehacks.webdevuw.org">This is a hackathon!</a>',
       },
       {
         id: 2,
         title: 'MadHacks Hackathon',
         image: madhacks,
-        description: createAnchor({ href: 'https://www.madhacks.io' }, 'This is also a hackathon.'),
+        description: '<a href="https://www.madhacks.io">This is also a hackathon.</a>',
       },
     ]);
   }
