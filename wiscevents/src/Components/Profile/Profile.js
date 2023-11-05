@@ -6,31 +6,23 @@ import cheesehacks from '../../images/CheeseHacks.jpg';
 import './Profile.css';
 
 function createAnchor(props, text) {
-  return React.createElement('a', props, text);
+  return <a {...props}>{text}</a>;
 }
 
 function createEvent(event) {
-    return (
+  return (
     <div key={event.id} className="event">
-        <a href={'/events/'+event.id}>
+      <a href={'/events/' + event.id}>
         <div className="event-image">
-            <img src={event.image} alt={event.title}/>
+          <img src={event.image} alt={event.title} />
         </div>
         <div className="event-details">
-            <h3>{event.title}</h3>
-            <p className="event-description" dangerouslySetInnerHTML={{__html: event.description}}></p>
+          <h3>{event.title}</h3>
+          <p className="event-description" dangerouslySetInnerHTML={{ __html: event.description }}></p>
         </div>
-        </a>
-    </div>)
-  /*return React.createElement('div', { key: event.id, className: 'event' },
-    React.createElement('div', { className: 'event-image' },
-      React.createElement('img', { src: event.image, alt: event.title })
-    ),
-    React.createElement('div', { className: 'event-details' },
-      React.createElement('h3', null, event.title),
-      React.createElement('p', { className: 'event-description' }, createAnchor({ href: event.description.props.href }, event.description.props.children))
-    )
-  );*/
+      </a>
+    </div>
+  );
 }
 
 export default function Profile(props) {
@@ -62,21 +54,25 @@ export default function Profile(props) {
   }
 
   if (ls.get('isAuthenticated')) {
-    return React.createElement('div', { className: 'profile' },
-      React.createElement('button', { onClick: handleSignOut, className: 'sign-out-button' }, 'Sign Out'),
-      React.createElement('div', { className: 'user-profile' },
-        React.createElement('div', { className: 'user-info' },
-          React.createElement('img', { src: props.user.picture, alt: 'User Profile' }),
-          React.createElement('h2', null, props.user.name),
-          React.createElement('p', null, 'Email: ', props.user.email)
-        ),
-        React.createElement('div', { className: 'user-events' },
-          React.createElement('h2', null, 'Your Events'),
-          ...ls.get('events').map((event) => createEvent(event))
-        )
-      )
+    return (
+      <div className="profile">
+        <button onClick={handleSignOut} className="sign-out-button">
+          Sign Out
+        </button>
+        <div className="user-profile">
+          <div className="user-info">
+            <img src={props.user.picture} alt="User Profile" />
+            <h2>{props.user.name}</h2>
+            <p>Email: {props.user.email}</p>
+          </div>
+          <div className="user-events">
+            <h2>Your Events</h2>
+            {ls.get('events').map((event) => createEvent(event))}
+          </div>
+        </div>
+      </div>
     );
   } else {
-    return React.createElement(Navigate, { to: '/', replace: true });
+    return <Navigate to="/" replace={true} />;
   }
 }
