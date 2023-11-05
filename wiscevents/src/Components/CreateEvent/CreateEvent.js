@@ -32,7 +32,7 @@ console.log(props)
   };
 
   const createEvent = () => {
-    const id = props.events.length + 1;
+    const id = props.events.length+1;
     console.log("creating " + id)
     const event = {
       image:props.image,
@@ -44,8 +44,7 @@ console.log(props)
 
     var res = [...props.events, event]
     props.setEvents(res);
-    ls.set("events", res);
-    console.log(ls.get("events"))
+    ls.set("events", res)
     clearInputFields(); // Clear input fields and image after creating the event
 
     redirectEvents(id);
