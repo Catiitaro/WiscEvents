@@ -2,9 +2,14 @@
   overflow: hidden;
   background-color: #f1f1f1;
   padding: 20px 10px;
+  display: flex;
+  justify-content: space-between; /* Add space between left and right items */
+  align-items: center; /* Vertically align items */
 }
-.header-right{
+.header-right {
   float: right;
+  display: flex; /* Display buttons in a row */
+  gap: 10px; /* Add some space between buttons */
 }
 .logo {
   width: 200px;
