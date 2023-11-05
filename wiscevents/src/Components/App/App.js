@@ -17,6 +17,11 @@ const App = () => {
   const [user, setUser] = useState(ls.get("user") || {})
   const [isAuthenticated, setAuthenticated] = 
   useState(ls.get("isAuthenticated"))
+  const [image, setImage] = useState(null);
+  const [location, setLocation] = useState('');
+  const [cost, setCost] = useState('');
+  const [description, setDescription] = useState('');
+  const [events, setEvents] = useState(ls.get("events")||[]);
 
   return (
     <div className="App">
@@ -47,7 +52,9 @@ const App = () => {
           },
           {
             path: "/create-event",
-            element: <CreateEvent isAuthenticated={isAuthenticated} user={user}/>,
+            element: <CreateEvent isAuthenticated={isAuthenticated} user={user} image={image}
+            setImage={setImage} setLocation={setLocation} location={location} setCost={setCost} cost={cost} setDescription={setDescription}
+            description={description} setEvents={setEvents} events={events}/>,
           },
         ])
       }/>

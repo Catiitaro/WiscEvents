@@ -1,0 +1,50 @@
+/* CreateEvent.css */
+
+.create-event {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-and-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*margin-right: ; /* Adjust the margin as needed */
+  }
+  
+  .event-image {
+    max-width: 500;
+    max-height: 300px;
+    object-fit: cover;
+  }
+  
+  textarea.auto-expand-textarea {
+    min-height: 100px;
+    max-width: 300px;
+    resize: vertical;
+  }
+
+
+/* Style input placeholders */
+input[type="text"]::placeholder,
+textarea::placeholder {
+  color: #999; /* Placeholder text color */
+  font-style: italic; /* Italicize the placeholder text (optional) */
+}
+
+/* Style input placeholders on focus to make them disappear */
+input[type="text"]:focus::placeholder,
+textarea:focus::placeholder {
+  color: transparent;
+}
+
+
+/* Center the text inside input and textarea boxes */
+input[type="text"],
+textarea {
+  text-align: center;
+}
+
+
+  

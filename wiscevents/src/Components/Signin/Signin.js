@@ -8,7 +8,13 @@ function Signin(props) {
   function handleCallbackResponse(response) {
     //console.log('Encoded JWT ID token: ' + response.credential);
     var decoded = jwtDecode(response.credential);
-    props.setUser(decoded); ls.set("user", decoded);
+    const user = {
+        name: decoded.name,
+        email: decoded.email,
+        picture: decoded.picture,
+        
+    }
+    props.setUser(user); ls.set("user", user);
     props.setAuthenticated(true); ls.set("isAuthenticated", true);
     document.getElementById('signInDiv').hidden = true;
   }
