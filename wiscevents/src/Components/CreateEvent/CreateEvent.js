@@ -1,5 +1,5 @@
 export default function CreateEvent() {
-    return (<div class="create-event">
+    return (<div className="create-event">
         CREATE-EVENT
     </div>)
 }
