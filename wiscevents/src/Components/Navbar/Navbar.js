@@ -1,11 +1,19 @@
 import './Navbar.css'
 import Button from '../Button/Button'
 import logo from '../../images/wiscevents1.webp'
+
+
 export default function Navbar() {
-    return (<div class="header">
-    <img src={logo} class="logo"/>
+    return (
+    <div class="header">
+    <a href="/"> <img src={logo} className="logo"/> </a>
+
+
     <Button name="Explore Events"/>
     <Button name="Create New Event"/>
-    <Button name="Profile"/>
-    </div>);
+    <div class="header-right">
+        <Button name="Sign In"/>
+    </div>
+    </div>
+    );
 }

@@ -1,10 +1,10 @@
 .button {
     background-color: #C5050C; /* Badger Red */
-    border: none;
+    border: 2px solid #C5050C;
     border-radius: 16px;
     color: white;
-    padding: 12px 28px;;
-    margin: 0px 0px 10px 10px;
+    padding: 10px 30px;;
+    margin: 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
