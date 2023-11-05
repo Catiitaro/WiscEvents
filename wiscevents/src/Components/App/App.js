@@ -2,7 +2,7 @@ import './App.css'
 import Navbar from '../Navbar/Navbar'
 import {
   createBrowserRouter,
-  RouterProvider, useParams
+  RouterProvider
 } from "react-router-dom";
 import Home from '../Home/Home'
 import CreateEvent from '../CreateEvent/CreateEvent'
