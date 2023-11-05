@@ -1,5 +1,8 @@
 /* CreateEvent.css */
-
+input, textarea {
+    margin: 10px;
+    width: 300px;
+}
 .create-event {
     display: flex;
     flex-direction: column;
@@ -24,7 +27,9 @@
     max-width: 300px;
     resize: vertical;
   }
-
+label {
+    text-align: center;
+}
 
 /* Style input placeholders */
 input[type="text"]::placeholder,

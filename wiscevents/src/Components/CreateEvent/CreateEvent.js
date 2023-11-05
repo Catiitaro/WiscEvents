@@ -8,6 +8,10 @@ function CreateEvent(props) {
     const [location, setLocation] = useState('');
     const [cost, setCost] = useState('');
     const [description, setDescription] = useState('');
+    const [title, setTitle] = useState('');
+    const [date, setDate] = useState('2023-11-05');
+    const [time, setTime] = useState('');
+
 console.log(props)
   const hiddenFileInput = useRef(null); // ADDED
 
@@ -43,6 +47,7 @@ console.log(props)
       cost:cost,
       description:description,
       id: id,
+      title: title
     };
 
     var res = [...props.events, event]
@@ -71,6 +76,13 @@ console.log(props)
             />
           </label>
           <img src={image} className="event-image" />
+          <label>Title:</label>
+          <input
+            type="text"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+            
+            />
           <label>Description:</label>
           <textarea
             value={description}
@@ -79,27 +91,39 @@ console.log(props)
           />
         </div>
       </div>
+      <label>Location:</label>
       <div className="event-input">
   <input
     type="text"
     value={location}
     onChange={(e) => setLocation(e.target.value)}
-    placeholder="Location"
   />
 </div>
+<label>Date:</label>
+<input
+    type="date"
+    value={date} id="date-selecter" min="2018-01-01"
+    onChange={(e) => setDate(e.target.value)}
+  />
+  <label>Time:</label>
+<input
+    type="time"
+    value={time} id="time-selecter" 
+    onChange={(e) => setTime(e.target.value)} 
+  />
+  <label>Cost:</label>
 <div className="event-input">
   <input
     type="text"
     value={cost}
     onChange={(e) => setCost(e.target.value)}
-    placeholder="Cost"
   />
 </div>
 
 
-      <button onClick={createEvent} className="create-button">
+      <ShittyButton onClick={createEvent} name="Create Event">
         Create Event
-      </button>
+      </ShittyButton>
 
       
 

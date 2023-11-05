@@ -12,14 +12,15 @@ export default function Profile(props) {
             id: 1,
             title: 'CheeseHacks Hackathon',
             image: cheesehacks,
-            description: <a href="https://cheesehacks.webdevuw.org">This is a hackathon!</a>,
+            description: '<a href="https://cheesehacks.webdevuw.org">This is a hackathon!</a>',
           },
           {
             id: 2,
             title: 'MadHacks Hackathon',
             image: madhacks,
-            description: <a href="https://www.madhacks.io">This is also a hackathon.</a>,
+            description: '<a href="https://www.madhacks.io">This is also a hackathon.</a>',
           },]);
+        
       }
     return (
         ls.get("isAuthenticated") ?

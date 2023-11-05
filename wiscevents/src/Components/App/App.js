@@ -22,14 +22,14 @@ const App = () => {
   const [events, setEvents] = useState(ls.get("events")||[{
     id: 1,
     title: 'CheeseHacks Hackathon',
-    image: '../../images/madhacks.avif',
-    description: <a href="https://cheesehacks.webdevuw.org">This is a hackathon!</a>,
+    image: cheesehacks,
+    description: '<a href="https://cheesehacks.webdevuw.org">This is a hackathon!</a>',
   },
   {
     id: 2,
     title: 'MadHacks Hackathon',
-    image: '../../images/CheeseHacks.jpg',
-    description: <a href="https://www.madhacks.io">This is also a hackathon.</a>,
+    image: madhacks,
+    description: '<a href="https://www.madhacks.io">This is also a hackathon.</a>',
   },]);
   console.log(events);
   return (

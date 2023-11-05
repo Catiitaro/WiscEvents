@@ -4,9 +4,10 @@ import {
   import './Events.css'
 export default function Events(props) {
     let {eventId} = useParams();
-    return (<div className="events">
-        Events <br/>
-        Id: {eventId}
-        <img src={props.events[eventId-1].image} />
+    let event = props.events[eventId-1]
+    return (
+    <div className="events">
+        <h1 className="event-title">{event.title}</h1>
+        <p className="event-description" dangerouslySetInnerHTML={{__html: event.description}}></p>
     </div>)
 }
