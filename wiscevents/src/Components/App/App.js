@@ -26,16 +26,16 @@ const App = () => {
   const [events, setEvents] = useState(ls.get("events")||[{
     id: 1,
     title: 'CheeseHacks Hackathon',
-    image: cheesehacks,
+    image: '../../images/madhacks.avif',
     description: <a href="https://cheesehacks.webdevuw.org">This is a hackathon!</a>,
   },
   {
     id: 2,
     title: 'MadHacks Hackathon',
-    image: madhacks,
+    image: '../../images/CheeseHacks.jpg',
     description: <a href="https://www.madhacks.io">This is also a hackathon.</a>,
   },]);
-
+  console.log(events);
   return (
     <div className="App">
       <Navbar isAuthenticated={isAuthenticated} user={user}/>
