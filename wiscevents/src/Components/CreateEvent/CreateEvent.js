@@ -49,7 +49,8 @@ console.log(props)
       id: id,
       title: title,
       time: time,
-      date: date
+      date: date,
+      price: price
     };
 
     var res = [...props.events, event]

@@ -12,21 +12,15 @@ function Home() {
       <section className="features">
         <div className="feature">
           <h2>Explore Events</h2>
-          <ul className="feature-list">
-            <li>Discover a diverse range of local events</li>
-            <li>From cultural festivals to sports tournaments</li>
-            <li>Tech meetups to art exhibitions</li>
-            <li>Opportunities to engage with your community</li>
-            <li>Networking, entertainment, learning, and fun</li>
-          </ul>
+          <p className="subtext">
+            Discover a diverse range of local events, from cultural festivals to sports tournaments, and from tech meetups to art exhibitions. Explore opportunities to engage with your community for networking, entertainment, learning, and fun.
+          </p>
         </div>
         <div className="feature">
           <h2>Create Events</h2>
-          <p>Become an event organizer and bring your unique ideas to life by hosting events that reflect your passions and goals.
-            Showcase your creativity and expertise by curating events that resonate with your community, whether it's a charity run, an art workshop, or a tech conference.
-            Share your events with a wide audience, attracting attendees who share your enthusiasm and want to participate in the experiences you create.
-            Our platform provides you with the tools and support you need to plan and promote your events, ensuring that your initiatives receive the attention they deserve.
-            By hosting events, you contribute to building a vibrant and interconnected community, where people can come together to learn, collaborate, and enjoy shared interests.</p>
+          <p className="subtext">
+            Become an event organizer to bring your unique ideas to life. Showcase your creativity and expertise by curating community-focused events, whether it's a charity run, an art workshop, or a tech conference. Share your events with a wide audience to attract enthusiastic participants. Receive tools and support for planning and promoting events.
+          </p>
         </div>
       </section>
       <h2>What People Are Saying</h2>
@@ -43,7 +37,7 @@ function Home() {
         </div>
       </section>
       <footer className="footer">
-        <p>&copy; 2023 CheeseHacks </p>
+        <p>&copy; 2023 CheeseHacks</p>
       </footer>
     </div>
   );
