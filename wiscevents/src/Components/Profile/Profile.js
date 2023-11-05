@@ -43,12 +43,18 @@ export default function Profile(props) {
         title: 'CheeseHacks Hackathon',
         image: cheesehacks,
         description: '<a href="https://cheesehacks.webdevuw.org">This is a hackathon!</a>',
+        time: '01:00:PM',
+        date: '11-04-2023',
+        cost: 'one day of your life'
       },
       {
         id: 2,
         title: 'MadHacks Hackathon',
         image: madhacks,
         description: '<a href="https://www.madhacks.io">This is also a hackathon.</a>',
+        time: '01:00:PM',
+        date: '11-11-2023',
+        cost: '$0.00'
       },
     ]);
   }
