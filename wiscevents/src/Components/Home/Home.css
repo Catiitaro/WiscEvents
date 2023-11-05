@@ -15,10 +15,20 @@
 .features {
   display: flex;
   flex-direction: column;
-  align-items: center; /* Center horizontally */
-  gap: 20px; /* Increase the space between features */
-  max-width: 800px; /* Optionally, set a max-width for the centered section */
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  padding: 20px;
+  border-radius: 10px;
+  
 }
+
+.feature i {
+  font-size: 36px;
+  color: #0074d9;
+  margin-bottom: 10px;
+}
+
 
 .testimonials {
   text-align: center;
@@ -31,12 +41,13 @@
 
 .testimonial {
   text-align: center;
-  flex: 1;
+  flex: auto;
   padding: 20px; /* Add padding for separation and a clean look */
   background-color: #fff; /* Add a white background for testimonials */
   border-radius: 10px; /* Round the testimonial containers */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle box shadow */
 }
+
 
 .testimonial img {
   max-width: 100px; /* Set the maximum image width */
@@ -79,5 +90,21 @@
 
 /* Additional styling for the footer */
 .footer p {
-  font-size: 14px;
+  color: #777; /* Lighter text color for the footer */
+}
+
+/* Add a smooth hover animation */
+#signInDiv button {
+  transition: all 0.3s ease-in-out;
+}
+
+#signInDiv button:hover {
+  background-color: #357ABD;
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+/* Testimonial hover effect */
+.testimonial:hover {
+  transform: translateY(-5px); /* Slight elevation on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
 }

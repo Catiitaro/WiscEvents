@@ -1,0 +1,47 @@
+/* Styles for the "Sign Out" button */
+.sign-out-button {
+    margin-top: 125px; /* Add margin to move the button down */
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  
+  /* Styles for uniform and smaller events */
+  .event {
+    display: flex;
+    margin: 20px 0;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-image img {
+    max-width: 100px;
+    border-radius: 10px 0 0 10px;
+  }
+  
+  .event-details {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  /* Styles for the user profile position */
+  .user-profile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    margin-top: 40px;
+  }
+  
+  .user-info {
+    margin-right: 200px;
+  }
+  
+  .user-info img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
