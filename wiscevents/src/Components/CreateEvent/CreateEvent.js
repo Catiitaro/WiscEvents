@@ -47,7 +47,9 @@ console.log(props)
       cost:cost,
       description:description,
       id: id,
-      title: title
+      title: title,
+      time: time,
+      date: date
     };
 
     var res = [...props.events, event]

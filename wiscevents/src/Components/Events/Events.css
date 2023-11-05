@@ -2,58 +2,61 @@
 
 /* Styles for the main events container */
 .events {
-    display: flex;
-    align-items: top;
-    justify-content: left;
-    padding: 25px;
-    min-height: 100vh;
-    background-color: #f7f7f7;
-  }
-  
-  /* Styles for the left column containing the event image */
-  .event-image {
-    width: 400px;
-    max-height: 400px; /* Adjust the max height as needed */
-    object-fit: cover;
-    border-radius: 10px;
-    margin-right: 20px; /* Add spacing between columns */
-  }
-  
-  /* Styles for the right column containing event information */
-  .event-description {
-    width: 50%;
-  }
-  
-  /* Additional styles for the event title */
-  .event-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
+  display: flex;
+  align-items: flex-start; /* Adjusted to align content to the top */
+  justify-content: left;
+  padding: 25px;
+  min-height: 100vh;
+  background-color: #f7f7f7;
+}
 
-  .event-location {
-    width: 50%;
-  }
+/* Styles for the left column containing the event image */
+.event-image-container {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
 
-  .event-time {
-    width: 50px;
-  }
+.event-image {
+max-width: 100%;
+max-height: auto; /* Allow the image to be larger */
+object-fit: cover;
+border-radius: 10px;
+margin-right: 20px; /* Increased spacing between columns */
+}
 
-  .event-date {
-    width: 50px;
-  }
-  
-  /* Responsive design for smaller screens */
-  @media (max-width: 768px) {
-    /* Revert to a single-column layout on smaller screens */
-    .event-image,
-    .event-description {
-      width: 100%;
-      margin-right: 0;
-    }
-  
-    .event-image {
-      max-height: auto; /* Adjust as needed */
-    }
-  }
-  
+/* Styles for the right column containing event information */
+.event-details {
+flex: 1; /* Allow the right column to grow as needed */
+padding: 20px; /* Increased padding around the right column */
+border: 2px solid #ccc; /* Add a border around the right column */
+border-radius: 10px; /* Rounded corners */
+}
+
+/* Additional styles for the event title */
+.event-title {
+font-size: 24px;
+font-weight: bold;
+margin-bottom: 10px;
+}
+
+/* Styles for event information elements (location, time, date) */
+.event-location {
+width: 50%;
+}
+
+.event-time {
+width: 50px;
+}
+
+.event-date {
+width: 50px;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+/* Revert to a single-column layout on smaller screens */
+.event-image {
+  margin-right: 0;
+}
+}
